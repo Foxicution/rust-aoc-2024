@@ -3,21 +3,21 @@
 ## 📁 Structure
 
 ```
-    rust-aoc-2024/
-    ├── data/  # Input files for each day
-    │ ├── day1.txt
-    | └── ...
-    ├── src/
-    │ ├── days/ # Solutions for each day
-    │ │ ├── day1.rs
-    │ │ ├── ...
-    │ │ └── mod.rs # Module definitions
-    │ ├── main.rs # Entry point for the application
-    │ └── utils.rs # Utility functions shared across solutions
-    ├── .gitignore
-    ├── Cargo.lock
-    ├── Cargo.toml
-    └── README.md
+rust-aoc-2024/
+├── data/  # Input files for each day
+│ ├── day1.txt
+│ └── ...
+├── src/
+│ ├── days/ # Solutions for each day
+│ │ ├── day1.rs
+│ │ ├── ...
+│ │ └── mod.rs # Module definitions
+│ ├── main.rs # Entry point for the application
+│ └── utils.rs # Utility functions shared across solutions
+├── .gitignore
+├── Cargo.lock
+├── Cargo.toml
+└── README.md
 ```
 
 ## 🚀 To run
