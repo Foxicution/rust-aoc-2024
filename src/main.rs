@@ -1,8 +1,7 @@
 mod days;
 mod utils;
 
-use days::day1::day1;
-
 fn main() {
-    day1()
+    days::day1::solution();
+    days::day2::solution();
 }

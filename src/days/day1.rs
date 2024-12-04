@@ -30,7 +30,7 @@ fn part_2(input: &str) -> i32 {
     l1.iter().map(|num| hm.get(num).unwrap_or(&0) * num).sum()
 }
 
-pub fn day1() {
+pub fn solution() {
     let input = read_input("day1.txt");
     println!("part1: {}", part_1(&input));
     println!("part2: {}", part_2(&input));
