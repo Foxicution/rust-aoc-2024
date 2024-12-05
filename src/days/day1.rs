@@ -1,7 +1,7 @@
 use crate::utils::read_input;
 use std::collections::HashMap;
 
-fn parse_input(input: &str) -> (Vec<i32>, Vec<i32>) {
+fn parse(input: &str) -> (Vec<i32>, Vec<i32>) {
     let (mut l1, mut l2) = (vec![], vec![]);
     for line in input.lines() {
         let mut nums = line.split_whitespace();
@@ -12,7 +12,7 @@ fn parse_input(input: &str) -> (Vec<i32>, Vec<i32>) {
 }
 
 fn part_1(input: &str) -> i32 {
-    let (mut l1, mut l2) = parse_input(input);
+    let (mut l1, mut l2) = parse(input);
 
     l1.sort_unstable();
     l2.sort_unstable();
@@ -21,7 +21,7 @@ fn part_1(input: &str) -> i32 {
 }
 
 fn part_2(input: &str) -> i32 {
-    let (l1, l2) = parse_input(input);
+    let (l1, l2) = parse(input);
     let mut hm = HashMap::new();
     for num in l2 {
         *hm.entry(num).or_insert(0) += 1;

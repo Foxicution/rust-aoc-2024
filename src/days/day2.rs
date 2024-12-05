@@ -1,6 +1,6 @@
 use crate::utils::read_input;
 
-fn parse_input(input: &str) -> Vec<Vec<i32>> {
+fn parse(input: &str) -> Vec<Vec<i32>> {
     let mut l = vec![];
     for line in input.trim().lines() {
         let nums: Vec<i32> = line
@@ -33,13 +33,13 @@ fn is_safe(report: &[i32]) -> bool {
 }
 
 fn part_1(input: &str) -> i32 {
-    let reports = parse_input(input);
+    let reports = parse(input);
 
     reports.iter().filter(|report| is_safe(&report)).count() as i32
 }
 
 fn part_2(input: &str) -> i32 {
-    let reports = parse_input(input);
+    let reports = parse(input);
 
     reports
         .iter()
